@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  background: #333;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #fff;
+}
+
+nav,
+.preview {
+  font-family: 'Nothing You Could Do', sans-serif;
+}
+
+/* Nav Bar */
+
+nav {
+  float: right;
+  border: 2px solid red;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+}
+nav li {
+  padding: 0 20px;
+  display: inline;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header */
+
+header h1 {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  margin: 0;
+  border: 2px solid red;
+}
+
+header h2 {
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+  margin: 0;
+  border: 2px solid red;
+}
+
+/* Main Content */
+/*---------------------------------*/
+/* Features Section */
+main {
+  color: #000;
+}
+
+.features {
+
+  background: #777;
+}
+
+.header-container {
+  position: relative;
+  margin: auto;
+  border: 1px solid green;
+  max-width: 1000px;
+  height: 100%;
+  overflow: auto;
+}
+
+.container {
+  margin: auto;
+  border: 1px solid blue;
+  max-width: 1000px;
+  overflow: auto;
+}
+
+.feature1,
+.feature2,
+.feature3 {
+  border: 1px solid red;
+  width: 25%;
+  float: left;
+  vertical-align: top;
+  margin: 5% 0;
+  text-align: center;
+}
+
+.feature1 {
+  margin-right: 2.5%;
+  margin-left: 7.5%
+}
+
+.feature2 {
+  margin-right: 2.5%;
+  margin-left: 2.5%
+}
+
+.feature3 {
+  margin-right: 7.5%;
+  margin-left: 2.5%
+}
+
+.feature-img {
+  display: block;
+  margin: auto;
+  width: 75%;
+}
+
+/* Preview Section */
+
+.preview {
+  height: 300px;
+  background: #222;
+  color: #fff;
+}
+
+.preview-container {
+  position: relative;
+  margin: auto;
+  border: 1px solid purple;
+  max-width: 1000px;
+  height: 100%;
+}
+
+.preview h3 {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  right: 7.5%;
+  transform: translateY(-50%);
+}
+
+/* Details Section */
+
+.details {
+  height: 400px;
+  background: #555;
+}
+
+.details-container {
+  position: relative;
+  margin: auto;
+  border: 1px solid purple;
+  max-width: 1000px;
+  height: 100%;
+}
+
+.details table,
+.details table td {
+  border: 1px solid black;
+}
+
+.details table {
+  border-collapse: collapse;
+}
+
+.details table td {
+  padding: 10px;
+}
+
+.details table td:first-child {
+  padding-right:100px;
+}
+
+/* */
