@@ -143,11 +143,19 @@ main {
   transform: translateY(-50%);
 }
 
+main section:nth-of-type(4) h3 {
+  left: 7.5%;
+}
+
 /* Details Section */
 
 .details {
-  height: 400px;
   background: #555;
+}
+
+.details h3 {
+  text-align: center;
+  margin: 5% 0;
 }
 
 .details-container {
@@ -156,6 +164,7 @@ main {
   border: 1px solid purple;
   max-width: 1000px;
   height: 100%;
+  overflow: auto;
 }
 
 .details table,
@@ -164,15 +173,178 @@ main {
 }
 
 .details table {
+  display: inline-block;
   border-collapse: collapse;
+  margin: 0 7.5% 5% 7.5%;
+  float: left;
 }
 
 .details table td {
-  padding: 10px;
+  padding: 2%;
 }
 
 .details table td:first-child {
-  padding-right:100px;
+  padding-right: 25%;
+  text-align: left;
 }
+
+.details table td:not(first-child) {
+  text-align: center;
+}
+
+.purchase {
+  float: right;
+  margin-right: 7.5%;
+  margin-bottom: 5%;
+  width: 33%;
+  border: 1px solid teal;
+  max-height: 207px;
+}
+
+.purchase h4,
+.purchase span {
+  margin-top: 0;
+}
+
+.purchase h4 {
+  text-align: center;
+}
+
+.purchase a {
+  display: inline-block;
+  width: 50%;
+  background: #222;;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 5px;
+  color: #fff;
+}
+
+.purchase span {
+  display: inline-block;
+  width: 40%;
+  vertical-align: middle;
+}
+
+/* Gallery Section */
+
+.gallery {
+  background: #aaa;
+}
+
+.gallery-container {
+  margin: auto;
+  border: 1px solid orange;
+  max-width: 1000px;
+  height: 100%;
+}
+
+.gallery h3 {
+  text-align: center;
+  margin: 5% 0 2.5% 0;
+}
+
+.gallery .photos {
+  border: 1px solid brown;
+  margin: 0 15% 2.5% 15%;
+  overflow: auto;
+}
+
+.gallery .photos img {
+  float: left;
+  width: 20%;
+  margin: 2.5%2.5%;
+}
+
+/* Footer */
+
+footer {
+  background: #000;
+}
+
+.footer-container {
+  margin: auto;
+  border: 1px solid green;
+  max-width: 1000px;
+  height: 100%;
+  overflow: auto;
+}
+
+
+footer .contact {
+  border: 1px solid purple;
+  margin: 7.5% 0 7.5% 7.5%;
+  color: white;
+  width: 42.5%;
+  float: left;
+}
+
+.contact form {
+  overflow: auto;
+}
+.contact input {
+  float: left;
+  margin: 0 5% 5% 5%;
+  width: 40%;
+}
+
+.contact textarea {
+  margin: 0 5% 5% 5%;
+  width: 90%;
+}
+
+.contact button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+
+.footer-info {
+  float: left;
+  width: 42.5%;
+  color: white;
+  border: 1px solid orange;
+  margin: 7.5% 7.5% 7.5% 0;
+  text-align: right;
+  padding-left: 2.5%;
+}
+
+.footer-info h4 {
+  margin: 0;
+}
+
+.footer-info p {
+  font-size: 0.8rem;
+}
+
+.footer-info a {
+  display: inline-block;
+  margin: 14px 0;
+  padding-left: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.social {
+  margin-top: 16px;
+}
+
+.social span {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* */
