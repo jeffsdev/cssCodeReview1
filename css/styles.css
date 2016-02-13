@@ -31,6 +31,7 @@ h4,
 h5,
 h6 {
   font-family: 'Nothing You Could Do', sans-serif;
+  text-shadow: 4px 4px 6px #000;
 }
 
 nav,
@@ -58,6 +59,11 @@ nav li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.17rem;
+  text-shadow: 4px 4px 6px #000;
+}
+
+nav li a:hover {
+  color: orange;
 }
 
 /* Header */
@@ -67,6 +73,8 @@ header h1 {
   top: 15%;
   left: 15%;
   margin: 0;
+  font-size: 4rem;
+  letter-spacing: 3px;
 }
 
 header h2 {
@@ -74,6 +82,12 @@ header h2 {
   bottom: 25%;
   right: 10%;
   margin: 0;
+}
+
+header span {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
 }
 
 /* Main Content */
@@ -91,7 +105,6 @@ main {
 .header-container {
   position: relative;
   margin: auto;
-  border: 1px solid green;
   max-width: 1200px;
   height: 100%;
   overflow: auto;
@@ -99,7 +112,6 @@ main {
 
 .container {
   margin: auto;
-  border: 1px solid blue;
   max-width: 1200px;
   overflow: auto;
 }
@@ -156,7 +168,6 @@ main {
 .preview-container {
   position: relative;
   margin: auto;
-  border: 1px solid purple;
   max-width: 1200px;
   height: 100%;
 }
@@ -167,7 +178,6 @@ main {
   top: 50%;
   right: 7.5%;
   transform: translateY(-50%);
-  text-shadow: 4px 4px 6px #000;
 }
 
 main section:nth-of-type(4) h2 {
@@ -197,7 +207,6 @@ main section:nth-of-type(4) {
 .details-container {
   position: relative;
   margin: auto;
-  border: 1px solid purple;
   max-width: 1200px;
   height: 100%;
   overflow: auto;
@@ -207,8 +216,20 @@ main section:nth-of-type(4) {
 .details table td {
   border: 1px solid black;
   color: #ccc;
+  font-size: 0.8rem;
 }
 
+.details th {
+  border-bottom: 1px solid #555;
+}
+
+.details th:first-child {
+  text-align: left;
+}
+
+.details th:not(first-child) {
+  padding: 0 10px;
+}
 .details table {
   display: inline-block;
   border-collapse: collapse;
@@ -221,7 +242,6 @@ main section:nth-of-type(4) {
 }
 
 .details table td:first-child {
-  padding-right: 25%;
   text-align: left;
 }
 
@@ -254,14 +274,20 @@ main section:nth-of-type(4) {
   padding: 10px;
   text-align: center;
   margin: 10px 5px;
-  color: #fff;
   text-decoration: none;
+}
+
+.purchase a:hover,
+.contact button:hover {
+  background: #444;
+  box-shadow: 0px 5px 0px #777;
 }
 
 .purchase span {
   display: inline-block;
   width: 40%;
   vertical-align: middle;
+  font-size: 0.8rem;
 }
 
 /* Gallery Section */
@@ -272,14 +298,14 @@ main section:nth-of-type(4) {
 
 .gallery-container {
   margin: auto;
-  border: 1px solid orange;
   max-width: 1200px;
   height: 100%;
 }
 
 .gallery h3 {
   text-align: center;
-  margin: 5% 0 2.5% 0;
+  margin: 0 0 2.5% 0;
+  padding-top: 5%;
 }
 
 .gallery .photos {
@@ -301,12 +327,15 @@ footer {
 
 .footer-container {
   margin: auto;
-  border: 1px solid green;
   max-width: 1200px;
   height: 100%;
   overflow: auto;
 }
 
+.contact h4 {
+  text-align: center;
+  margin-top: 0;
+}
 
 footer .contact {
   margin: 7.5% 0 7.5% 7.5%;
@@ -342,6 +371,8 @@ footer .contact {
   padding: 10px 50px;
   border: none;
   background: #555;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .footer-info {
