@@ -1,17 +1,36 @@
 * {
   box-sizing: border-box;
+  color: #ccc;
 }
 
 body {
   margin: 0;
 }
 
+main,
+footer {
+  font-family: sans-serif;
+}
+
 header {
   height: 100vh;
   background: #333;
+  background-image: url('../img/Whiterun.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: sans-serif;
   font-weight: 100;
   color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nothing You Could Do', sans-serif;
 }
 
 nav,
@@ -23,7 +42,6 @@ nav,
 
 nav {
   float: right;
-  border: 2px solid red;
 }
 
 nav ul {
@@ -39,6 +57,7 @@ nav li {
 nav li a {
   text-decoration: none;
   color: #fff;
+  font-size: 1.17rem;
 }
 
 /* Header */
@@ -48,7 +67,6 @@ header h1 {
   top: 15%;
   left: 15%;
   margin: 0;
-  border: 2px solid red;
 }
 
 header h2 {
@@ -56,7 +74,6 @@ header h2 {
   bottom: 25%;
   right: 10%;
   margin: 0;
-  border: 2px solid red;
 }
 
 /* Main Content */
@@ -67,15 +84,15 @@ main {
 }
 
 .features {
-
-  background: #777;
+  background: #222;
+  color: #ccc;
 }
 
 .header-container {
   position: relative;
   margin: auto;
   border: 1px solid green;
-  max-width: 1000px;
+  max-width: 1200px;
   height: 100%;
   overflow: auto;
 }
@@ -83,18 +100,22 @@ main {
 .container {
   margin: auto;
   border: 1px solid blue;
-  max-width: 1000px;
+  max-width: 1200px;
   overflow: auto;
+}
+
+.container h3 {
+  text-align: center;
+  margin: 5% 0;
 }
 
 .feature1,
 .feature2,
 .feature3 {
-  border: 1px solid red;
   width: 25%;
   float: left;
   vertical-align: top;
-  margin: 5% 0;
+  margin-bottom: 5%;
   text-align: center;
 }
 
@@ -117,6 +138,7 @@ main {
   display: block;
   margin: auto;
   width: 75%;
+  border: 2px solid #000;
 }
 
 /* Preview Section */
@@ -124,6 +146,10 @@ main {
 .preview {
   height: 300px;
   background: #222;
+  background-image: url('../img/Whiterun_Lantern.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #fff;
 }
 
@@ -131,38 +157,48 @@ main {
   position: relative;
   margin: auto;
   border: 1px solid purple;
-  max-width: 1000px;
+  max-width: 1200px;
   height: 100%;
 }
 
-.preview h3 {
+.preview h2 {
   position: absolute;
   margin: 0;
   top: 50%;
   right: 7.5%;
   transform: translateY(-50%);
+  text-shadow: 4px 4px 6px #000;
 }
 
-main section:nth-of-type(4) h3 {
+main section:nth-of-type(4) h2 {
   left: 7.5%;
+}
+
+main section:nth-of-type(4) {
+  background-image: url('../img/Whiterun2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Details Section */
 
 .details {
-  background: #555;
+  background: #000;
+
 }
 
 .details h3 {
   text-align: center;
   margin: 5% 0;
+  color: #ccc;
 }
 
 .details-container {
   position: relative;
   margin: auto;
   border: 1px solid purple;
-  max-width: 1000px;
+  max-width: 1200px;
   height: 100%;
   overflow: auto;
 }
@@ -170,6 +206,7 @@ main section:nth-of-type(4) h3 {
 .details table,
 .details table td {
   border: 1px solid black;
+  color: #ccc;
 }
 
 .details table {
@@ -197,8 +234,8 @@ main section:nth-of-type(4) h3 {
   margin-right: 7.5%;
   margin-bottom: 5%;
   width: 33%;
-  border: 1px solid teal;
   max-height: 207px;
+  color: #ccc;
 }
 
 .purchase h4,
@@ -218,6 +255,7 @@ main section:nth-of-type(4) h3 {
   text-align: center;
   margin: 10px 5px;
   color: #fff;
+  text-decoration: none;
 }
 
 .purchase span {
@@ -229,13 +267,13 @@ main section:nth-of-type(4) h3 {
 /* Gallery Section */
 
 .gallery {
-  background: #aaa;
+  background: #222;
 }
 
 .gallery-container {
   margin: auto;
   border: 1px solid orange;
-  max-width: 1000px;
+  max-width: 1200px;
   height: 100%;
 }
 
@@ -245,7 +283,6 @@ main section:nth-of-type(4) h3 {
 }
 
 .gallery .photos {
-  border: 1px solid brown;
   margin: 0 15% 2.5% 15%;
   overflow: auto;
 }
@@ -265,14 +302,13 @@ footer {
 .footer-container {
   margin: auto;
   border: 1px solid green;
-  max-width: 1000px;
+  max-width: 1200px;
   height: 100%;
   overflow: auto;
 }
 
 
 footer .contact {
-  border: 1px solid purple;
   margin: 7.5% 0 7.5% 7.5%;
   color: white;
   width: 42.5%;
@@ -286,24 +322,32 @@ footer .contact {
   float: left;
   margin: 0 5% 5% 5%;
   width: 40%;
+  height: 30px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid teal;
 }
 
 .contact textarea {
   margin: 0 5% 5% 5%;
   width: 90%;
+  background: none;
+  border: none;
+  border: 3px solid teal;
 }
 
 .contact button {
   display: block;
   margin: 0 auto;
   padding: 10px 50px;
+  border: none;
+  background: #555;
 }
 
 .footer-info {
   float: left;
   width: 42.5%;
   color: white;
-  border: 1px solid orange;
   margin: 7.5% 7.5% 7.5% 0;
   text-align: right;
   padding-left: 2.5%;
