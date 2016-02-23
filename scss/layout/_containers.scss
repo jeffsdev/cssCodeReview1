@@ -1,10 +1,10 @@
 main {
-  color: #000;
+  color: $black;
 }
 
 .features {
-  background: #222;
-  color: #ccc;
+  background: $drk-grey;
+  color: $lt-grey;
 }
 
 .header-container {
@@ -55,18 +55,15 @@ main {
   display: block;
   margin: auto;
   width: 75%;
-  border: 2px solid #000;
+  border: 2px solid $black;
 }
 
 /* Preview Section */
 
 .preview {
   height: 300px;
-  background: #222;
-  background-image: url('../img/Whiterun_Lantern.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: $drk-grey;
+  @include backg-img-cover('../img/Whiterun_Lantern.jpg');
   color: #fff;
 }
 
@@ -90,23 +87,20 @@ main section:nth-of-type(4) h2 {
 }
 
 main section:nth-of-type(4) {
-  background-image: url('../img/Whiterun2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  @include backg-img-cover('../img/Whiterun2.jpg');
 }
 
 /* Details Section */
 
 .details {
-  background: #000;
+  background: $black;
 
 }
 
 .details h3 {
   text-align: center;
   margin: 5% 0;
-  color: #ccc;
+  color: $lt-grey;
 }
 
 .details-container {
@@ -120,7 +114,7 @@ main section:nth-of-type(4) {
 .details table,
 .details table td {
   border: 1px solid black;
-  color: #ccc;
+  color: $lt-grey;
   font-size: 0.8rem;
 }
 
@@ -160,7 +154,7 @@ main section:nth-of-type(4) {
   margin-bottom: 5%;
   width: 33%;
   max-height: 207px;
-  color: #ccc;
+  color: $lt-grey;
 }
 
 .purchase h4,
@@ -172,21 +166,9 @@ main section:nth-of-type(4) {
   text-align: center;
 }
 
-.purchase a {
-  display: inline-block;
-  width: 50%;
-  background: #222;;
-  padding: 10px;
-  text-align: center;
-  margin: 10px 5px;
-  text-decoration: none;
-}
 
-.purchase a:hover,
-.contact button:hover {
-  background: #444;
-  box-shadow: 0px 5px 0px #777;
-}
+
+
 
 .purchase span {
   display: inline-block;
@@ -198,7 +180,7 @@ main section:nth-of-type(4) {
 /* Gallery Section */
 
 .gallery {
-  background: #222;
+  background: $drk-grey;
 }
 
 .gallery-container {

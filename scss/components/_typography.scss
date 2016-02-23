@@ -4,6 +4,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nothing You Could Do', sans-serif;
-  text-shadow: 4px 4px 6px #000;
+  font-family: $stack-nycd;
+  text-shadow: $f-shadow;
 }

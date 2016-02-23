@@ -1,0 +1,25 @@
+.purchase a {
+  display: inline-block;
+  width: 50%;
+  background: $drk-grey;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 5px;
+  text-decoration: none;
+}
+
+.contact button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 50px;
+  border: none;
+  background: #555;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.purchase a:hover,
+.contact button:hover {
+  background: #444;
+  box-shadow: 0px 5px 0px #777;
+}

@@ -1,18 +1,15 @@
 header {
   height: 100vh;
-  background: #333;
-  background-image: url('../img/Whiterun.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: sans-serif;
+  background: $drk-grey;
+  @include backg-img-cover('../img/Whiterun.jpg');
+  font-family: $stack-sans;
   font-weight: 100;
-  color: #fff;
+  color: $lt-grey;
 }
 
 nav,
 .preview {
-  font-family: 'Nothing You Could Do', sans-serif;
+  font-family: $stack-nycd;
 }
 
 /* Nav Bar */
@@ -33,9 +30,9 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: #fff;
+  color: $lt-grey;
   font-size: 1.17rem;
-  text-shadow: 4px 4px 6px #000;
+  text-shadow: $f-shadow;
 }
 
 nav li a:hover {

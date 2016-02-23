@@ -1,7 +1,7 @@
 /* Footer */
 
 footer {
-  background: #000;
+  background: $black;
 }
 
 .footer-container {
@@ -44,15 +44,7 @@ footer .contact {
   border: 3px solid teal;
 }
 
-.contact button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 50px;
-  border: none;
-  background: #555;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
+
 
 .footer-info {
   float: left;

@@ -1,0 +1,6 @@
+@mixin backg-img-cover($imgurl) {
+  background-image: url('#{$imgurl}');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

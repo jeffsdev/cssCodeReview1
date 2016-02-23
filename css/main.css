@@ -9,29 +9,52 @@ main,
 footer {
   font-family: sans-serif; }
 
+.purchase a {
+  display: inline-block;
+  width: 50%;
+  background: #222;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 5px;
+  text-decoration: none; }
+
+.contact button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 50px;
+  border: none;
+  background: #555;
+  margin-bottom: 5px;
+  cursor: pointer; }
+
+.purchase a:hover,
+.contact button:hover {
+  background: #444;
+  box-shadow: 0px 5px 0px #777; }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nothing You Could Do', sans-serif;
+  font-family: "Nothing You Could Do", sans-serif;
   text-shadow: 4px 4px 6px #000; }
 
 header {
   height: 100vh;
-  background: #333;
+  background: #222;
   background-image: url("../img/Whiterun.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: sans-serif;
   font-weight: 100;
-  color: #fff; }
+  color: #ccc; }
 
 nav,
 .preview {
-  font-family: 'Nothing You Could Do', sans-serif; }
+  font-family: "Nothing You Could Do", sans-serif; }
 
 /* Nav Bar */
 nav {
@@ -48,7 +71,7 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: #fff;
+  color: #ccc;
   font-size: 1.17rem;
   text-shadow: 4px 4px 6px #000; }
 
@@ -113,15 +136,6 @@ footer .contact {
   background: none;
   border: none;
   border: 3px solid teal; }
-
-.contact button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 50px;
-  border: none;
-  background: #555;
-  margin-bottom: 5px;
-  cursor: pointer; }
 
 .footer-info {
   float: left;
@@ -293,20 +307,6 @@ main section:nth-of-type(4) {
 
 .purchase h4 {
   text-align: center; }
-
-.purchase a {
-  display: inline-block;
-  width: 50%;
-  background: #222;
-  padding: 10px;
-  text-align: center;
-  margin: 10px 5px;
-  text-decoration: none; }
-
-.purchase a:hover,
-.contact button:hover {
-  background: #444;
-  box-shadow: 0px 5px 0px #777; }
 
 .purchase span {
   display: inline-block;
