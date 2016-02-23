@@ -4,3 +4,11 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+@mixin container($position: null, $margin: auto, $max-width: 1200px, $height: null, $overflow: null) {
+  position: $position;
+  margin: $margin;
+  max-width: $max-width;
+  height: $height;
+  overflow: $overflow;
+}

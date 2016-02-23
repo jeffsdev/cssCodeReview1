@@ -5,10 +5,7 @@ footer {
 }
 
 .footer-container {
-  margin: auto;
-  max-width: 1200px;
-  height: 100%;
-  overflow: auto;
+  @include container($height: 100%, $overflow: auto);
 }
 
 .contact h4 {

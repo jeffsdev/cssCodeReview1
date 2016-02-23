@@ -8,17 +8,11 @@ main {
 }
 
 .header-container {
-  position: relative;
-  margin: auto;
-  max-width: 1200px;
-  height: 100%;
-  overflow: auto;
+  @include container($position: relative, $height: 100%, $overflow: auto);
 }
 
 .container {
-  margin: auto;
-  max-width: 1200px;
-  overflow: auto;
+  @include container($overflow: auto);
 }
 
 .container h3 {
@@ -68,10 +62,7 @@ main {
 }
 
 .preview-container {
-  position: relative;
-  margin: auto;
-  max-width: 1200px;
-  height: 100%;
+  @include container($position: relative, $height: 100%);
 }
 
 .preview h2 {
@@ -104,11 +95,7 @@ main section:nth-of-type(4) {
 }
 
 .details-container {
-  position: relative;
-  margin: auto;
-  max-width: 1200px;
-  height: 100%;
-  overflow: auto;
+  @include container($position: relative, $height: 100%, $overflow: auto);
 }
 
 .details table,
@@ -167,9 +154,6 @@ main section:nth-of-type(4) {
 }
 
 
-
-
-
 .purchase span {
   display: inline-block;
   width: 40%;
@@ -184,9 +168,7 @@ main section:nth-of-type(4) {
 }
 
 .gallery-container {
-  margin: auto;
-  max-width: 1200px;
-  height: 100%;
+  @include container($height: 100%);
 }
 
 .gallery h3 {
