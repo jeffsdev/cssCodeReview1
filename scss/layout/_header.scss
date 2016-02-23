@@ -1,0 +1,67 @@
+header {
+  height: 100vh;
+  background: #333;
+  background-image: url('../img/Whiterun.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #fff;
+}
+
+nav,
+.preview {
+  font-family: 'Nothing You Could Do', sans-serif;
+}
+
+/* Nav Bar */
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+}
+nav li {
+  padding: 0 20px;
+  display: inline;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.17rem;
+  text-shadow: 4px 4px 6px #000;
+}
+
+nav li a:hover {
+  color: orange;
+}
+
+/* Header */
+
+header h1 {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  margin: 0;
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+header h2 {
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+  margin: 0;
+}
+
+header span {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+}

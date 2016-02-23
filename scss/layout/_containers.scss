@@ -1,0 +1,225 @@
+main {
+  color: #000;
+}
+
+.features {
+  background: #222;
+  color: #ccc;
+}
+
+.header-container {
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+  height: 100%;
+  overflow: auto;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  overflow: auto;
+}
+
+.container h3 {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.feature1,
+.feature2,
+.feature3 {
+  width: 25%;
+  float: left;
+  vertical-align: top;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.feature1 {
+  margin-right: 2.5%;
+  margin-left: 7.5%
+}
+
+.feature2 {
+  margin-right: 2.5%;
+  margin-left: 2.5%
+}
+
+.feature3 {
+  margin-right: 7.5%;
+  margin-left: 2.5%
+}
+
+.feature-img {
+  display: block;
+  margin: auto;
+  width: 75%;
+  border: 2px solid #000;
+}
+
+/* Preview Section */
+
+.preview {
+  height: 300px;
+  background: #222;
+  background-image: url('../img/Whiterun_Lantern.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.preview-container {
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.preview h2 {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  right: 7.5%;
+  transform: translateY(-50%);
+}
+
+main section:nth-of-type(4) h2 {
+  left: 7.5%;
+}
+
+main section:nth-of-type(4) {
+  background-image: url('../img/Whiterun2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Details Section */
+
+.details {
+  background: #000;
+
+}
+
+.details h3 {
+  text-align: center;
+  margin: 5% 0;
+  color: #ccc;
+}
+
+.details-container {
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+  height: 100%;
+  overflow: auto;
+}
+
+.details table,
+.details table td {
+  border: 1px solid black;
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.details th {
+  border-bottom: 1px solid #555;
+}
+
+.details th:first-child {
+  text-align: left;
+}
+
+.details th:not(first-child) {
+  padding: 0 10px;
+}
+.details table {
+  display: inline-block;
+  border-collapse: collapse;
+  margin: 0 7.5% 5% 7.5%;
+  float: left;
+}
+
+.details table td {
+  padding: 2%;
+}
+
+.details table td:first-child {
+  text-align: left;
+}
+
+.details table td:not(first-child) {
+  text-align: center;
+}
+
+.purchase {
+  float: right;
+  margin-right: 7.5%;
+  margin-bottom: 5%;
+  width: 33%;
+  max-height: 207px;
+  color: #ccc;
+}
+
+.purchase h4,
+.purchase span {
+  margin-top: 0;
+}
+
+.purchase h4 {
+  text-align: center;
+}
+
+.purchase a {
+  display: inline-block;
+  width: 50%;
+  background: #222;;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 5px;
+  text-decoration: none;
+}
+
+.purchase a:hover,
+.contact button:hover {
+  background: #444;
+  box-shadow: 0px 5px 0px #777;
+}
+
+.purchase span {
+  display: inline-block;
+  width: 40%;
+  vertical-align: middle;
+  font-size: 0.8rem;
+}
+
+/* Gallery Section */
+
+.gallery {
+  background: #222;
+}
+
+.gallery-container {
+  margin: auto;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.gallery h3 {
+  text-align: center;
+  margin: 0 0 2.5% 0;
+  padding-top: 5%;
+}
+
+.gallery .photos {
+  margin: 0 15% 2.5% 15%;
+  overflow: auto;
+}
+
+.gallery .photos img {
+  float: left;
+  width: 20%;
+  margin: 2.5%2.5%;
+}
