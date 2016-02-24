@@ -15,22 +15,22 @@ footer {
   background: #222;
   padding: 10px;
   text-align: center;
-  margin: 10px 5px;
-  text-decoration: none; }
+  margin: 10px 5px; }
 
 .contact button {
   display: block;
   margin: 0 auto;
   padding: 10px 50px;
   border: none;
-  background: #555;
+  background: #222;
   margin-bottom: 5px;
   cursor: pointer; }
 
 .purchase a:hover,
 .contact button:hover {
   background: #444;
-  box-shadow: 0px 5px 0px #777; }
+  box-shadow: 0px 5px 0px #777;
+  color: orange; }
 
 h1,
 h2,
@@ -41,6 +41,12 @@ h6 {
   font-family: "Nothing You Could Do", sans-serif;
   text-shadow: 4px 4px 6px #000; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    color: orange; }
+
+/* Header */
 header {
   height: 100vh;
   background: #222;
@@ -51,52 +57,38 @@ header {
   font-family: sans-serif;
   font-weight: 100;
   color: #ccc; }
-
-nav,
-.preview {
-  font-family: "Nothing You Could Do", sans-serif; }
+  header h1 {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    margin: 0;
+    font-size: 4rem;
+    letter-spacing: 3px; }
+  header h2 {
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    margin: 0; }
+  header span {
+    position: absolute;
+    bottom: 5%;
+    left: 50%; }
 
 /* Nav Bar */
 nav {
-  float: right; }
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 20px 0; }
-
-nav li {
-  padding: 0 20px;
-  display: inline; }
-
-nav li a {
-  text-decoration: none;
-  color: #ccc;
-  font-size: 1.17rem;
-  text-shadow: 4px 4px 6px #000; }
-
-nav li a:hover {
-  color: orange; }
-
-/* Header */
-header h1 {
-  position: absolute;
-  top: 15%;
-  left: 15%;
-  margin: 0;
-  font-size: 4rem;
-  letter-spacing: 3px; }
-
-header h2 {
-  position: absolute;
-  bottom: 25%;
-  right: 10%;
-  margin: 0; }
-
-header span {
-  position: absolute;
-  bottom: 5%;
-  left: 50%; }
+  float: right;
+  font-family: "Nothing You Could Do", sans-serif; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0; }
+  nav li {
+    padding: 0 20px;
+    display: inline; }
+    nav li a {
+      color: #ccc;
+      font-size: 1.17rem;
+      text-shadow: 4px 4px 6px #000; }
 
 /* Footer */
 footer {
@@ -108,34 +100,29 @@ footer {
   height: 100%;
   overflow: auto; }
 
-.contact h4 {
-  text-align: center;
-  margin-top: 0; }
-
-footer .contact {
+.contact {
   margin: 7.5% 0 7.5% 7.5%;
-  color: white;
   width: 42.5%;
   float: left; }
-
-.contact form {
-  overflow: auto; }
-
-.contact input {
-  float: left;
-  margin: 0 5% 5% 5%;
-  width: 40%;
-  height: 30px;
-  background: none;
-  border: none;
-  border-bottom: 3px solid teal; }
-
-.contact textarea {
-  margin: 0 5% 5% 5%;
-  width: 90%;
-  background: none;
-  border: none;
-  border: 3px solid teal; }
+  .contact h4 {
+    text-align: center;
+    margin-top: 0; }
+  .contact form {
+    overflow: auto; }
+  .contact input {
+    float: left;
+    width: 40%;
+    height: 30px;
+    margin: 0 5% 5% 5%;
+    background: none;
+    border: none;
+    border-bottom: 3px solid teal; }
+  .contact textarea {
+    width: 90%;
+    margin: 0 5% 5% 5%;
+    background: none;
+    border: none;
+    border: 3px solid teal; }
 
 .footer-info {
   float: left;
@@ -144,29 +131,20 @@ footer .contact {
   margin: 7.5% 7.5% 7.5% 0;
   text-align: right;
   padding-left: 2.5%; }
-
-.footer-info h4 {
-  margin: 0; }
-
-.footer-info p {
-  font-size: 0.8rem; }
-
-.footer-info a {
-  display: inline-block;
-  margin: 14px 0;
-  padding-left: 30px;
-  color: white;
-  text-decoration: none; }
+  .footer-info h4 {
+    margin: 0; }
+  .footer-info p {
+    font-size: 0.8rem; }
+  .footer-info a {
+    display: inline-block;
+    margin: 14px 0;
+    padding-left: 30px; }
 
 .social {
   margin-top: 16px; }
-
-.social span {
-  margin-left: 20px;
-  font-size: 1.5rem; }
-
-main {
-  color: #000; }
+  .social span {
+    margin-left: 20px;
+    font-size: 1.5rem; }
 
 .features {
   background: #222;

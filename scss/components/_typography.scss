@@ -7,3 +7,10 @@ h6 {
   font-family: $stack-nycd;
   text-shadow: $f-shadow;
 }
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: orange;
+  }
+}

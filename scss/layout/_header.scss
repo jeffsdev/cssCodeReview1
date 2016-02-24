@@ -1,3 +1,5 @@
+/* Header */
+
 header {
   height: 100vh;
   background: $drk-grey;
@@ -5,60 +7,44 @@ header {
   font-family: $stack-sans;
   font-weight: 100;
   color: $lt-grey;
-}
-
-nav,
-.preview {
-  font-family: $stack-nycd;
+  h1 {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    margin: 0;
+    font-size: 4rem;
+    letter-spacing: 3px;
+  }
+  h2 {
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    margin: 0;
+  }
+  span {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+  }
 }
 
 /* Nav Bar */
 
 nav {
   float: right;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 20px 0;
-}
-nav li {
-  padding: 0 20px;
-  display: inline;
-}
-
-nav li a {
-  text-decoration: none;
-  color: $lt-grey;
-  font-size: 1.17rem;
-  text-shadow: $f-shadow;
-}
-
-nav li a:hover {
-  color: orange;
-}
-
-/* Header */
-
-header h1 {
-  position: absolute;
-  top: 15%;
-  left: 15%;
-  margin: 0;
-  font-size: 4rem;
-  letter-spacing: 3px;
-}
-
-header h2 {
-  position: absolute;
-  bottom: 25%;
-  right: 10%;
-  margin: 0;
-}
-
-header span {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
+  font-family: $stack-nycd;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+  }
+  li {
+    padding: 0 20px;
+    display: inline;
+    a {
+      color: $lt-grey;
+      font-size: 1.17rem;
+      text-shadow: $f-shadow;
+    }
+  }
 }

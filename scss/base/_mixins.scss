@@ -12,3 +12,9 @@
   height: $height;
   overflow: $overflow;
 }
+
+@mixin form-inputs($margin: 0 5% 5% 5%, $background: none, $border: none) {
+  margin: $margin;
+  background: $background;
+  border: $border;
+}

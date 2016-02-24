@@ -8,40 +8,30 @@ footer {
   @include container($height: 100%, $overflow: auto);
 }
 
-.contact h4 {
-  text-align: center;
-  margin-top: 0;
-}
-
-footer .contact {
+.contact {
   margin: 7.5% 0 7.5% 7.5%;
-  color: white;
   width: 42.5%;
   float: left;
+  h4 {
+    text-align: center;
+    margin-top: 0;
+  }
+  form {
+    overflow: auto;
+  }
+  input {
+    float: left;
+    width: 40%;
+    height: 30px;
+    @include form-inputs();
+    border-bottom: $form-bdr;
+  }
+  textarea {
+    width: 90%;
+    @include form-inputs();
+    border: $form-bdr;
+  }
 }
-
-.contact form {
-  overflow: auto;
-}
-.contact input {
-  float: left;
-  margin: 0 5% 5% 5%;
-  width: 40%;
-  height: 30px;
-  background: none;
-  border: none;
-  border-bottom: 3px solid teal;
-}
-
-.contact textarea {
-  margin: 0 5% 5% 5%;
-  width: 90%;
-  background: none;
-  border: none;
-  border: 3px solid teal;
-}
-
-
 
 .footer-info {
   float: left;
@@ -50,29 +40,23 @@ footer .contact {
   margin: 7.5% 7.5% 7.5% 0;
   text-align: right;
   padding-left: 2.5%;
-}
-
-.footer-info h4 {
-  margin: 0;
-}
-
-.footer-info p {
-  font-size: 0.8rem;
-}
-
-.footer-info a {
-  display: inline-block;
-  margin: 14px 0;
-  padding-left: 30px;
-  color: white;
-  text-decoration: none;
+  h4 {
+    margin: 0;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  a {
+    display: inline-block;
+    margin: 14px 0;
+    padding-left: 30px;
+  }
 }
 
 .social {
   margin-top: 16px;
-}
-
-.social span {
-  margin-left: 20px;
-  font-size: 1.5rem;
+  span {
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
 }
