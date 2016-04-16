@@ -11,7 +11,9 @@ HTML, CSS
 
 ## Setup
 Clone repository.  
-Open index.html in browser
+Open index.html in browser  
+OR  
+[Link to GitHub Pages Site](http://jeffsdev.github.io/cssCodeReview1/)
 
 ## License
 Copyright (c) 2016 Jeff Seymour
