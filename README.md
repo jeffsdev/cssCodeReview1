@@ -1,5 +1,5 @@
 # CSS Code Review
-#### Week 1 - CSS code review for Epicodus  
+#### Week 1 - CSS code review - Epicodus  
 ##### By Jeff Seymour
 
 

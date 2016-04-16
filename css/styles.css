@@ -66,6 +66,17 @@ nav li a:hover {
   color: orange;
 }
 
+@media screen and (max-width: 768px) {
+  nav {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+  nav li a {
+    font-size: 2em;
+  }
+}
 /* Header */
 
 header h1 {
@@ -90,6 +101,19 @@ header span {
   left: 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .header-container h1 {
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+  }
+  .header-container h2 {
+    bottom: 10%;
+    transform: translateX(10%);
+    font-size: 1.5rem;
+  }
+}
 /* Main Content */
 /*---------------------------------*/
 /* Features Section */
@@ -151,6 +175,16 @@ main {
   margin: auto;
   width: 75%;
   border: 2px solid #000;
+}
+
+@media screen and (max-width: 640px) {
+  .feature1,
+  .feature2,
+  .feature3 {
+    width: 75%;
+    float: none;
+    margin: auto;
+  }
 }
 
 /* Preview Section */
@@ -290,6 +324,40 @@ main section:nth-of-type(4) {
   font-size: 0.8rem;
 }
 
+
+@media screen and (max-width: 850px) {
+  .details table {
+    display: block;
+    float: none;
+    margin: auto;
+    margin-bottom: 25px;
+    width: 50%;
+  }
+
+  .purchase {
+    float: none;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .details table {
+    display: block;
+    float: none;
+    margin: auto;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .purchase {
+    float: none;
+    margin: auto;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+}
+
 /* Gallery Section */
 
 .gallery {
@@ -317,6 +385,14 @@ main section:nth-of-type(4) {
   float: left;
   width: 20%;
   margin: 2.5%2.5%;
+}
+
+@media screen and (max-width: 640px) {
+  .gallery .photos img {
+    float: left;
+    width: 45%;
+    margin: 2.5% 2.5%;
+  }
 }
 
 /* Footer */
@@ -410,6 +486,22 @@ footer .contact {
 }
 
 
+@media screen and (max-width: 640px) {
+  footer .contact {
+    margin: 7.5% 0;
+    color: white;
+    width: 100%;
+    float: none;
+  }
+  .footer-info {
+    float: none;
+    width: 100%;
+    color: white;
+    margin: 7.5% 0;
+    text-align: center;
+    padding-left: 0;
+  }
+}
 
 
 
